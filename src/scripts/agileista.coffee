@@ -8,7 +8,7 @@
 #   HUBOT_AGILEISTA_DOMAIN
 #
 # Commands:
-#   hubot #1234 - Reply with link to agileista story 1234
+#   #1234 - Listen for all text matching this pattern and chip in with a link to that agileista story
 #
 # Author:
 #   smulube
