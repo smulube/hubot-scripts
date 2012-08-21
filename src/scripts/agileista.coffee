@@ -9,7 +9,7 @@
 #   HUBOT_AGILEISTA_API_KEY
 #
 # Commands:
-#   hubot show me #1234 - Show agilista ticket number 1234 (if it exists)
+#   hubot show me #1234 - Show agileista ticket number 1234 (if it exists)
 #
 # Author:
 #   smulube
@@ -25,7 +25,7 @@ module.exports = (robot) ->
       .get() (err, res, body) ->
         if res.statusCode == 200
           object = JSON.parse(body)
-          msg.send object.description
+          msg.send object.definition
           msg.send "https://#{domain}.agileista.com/user_stories/#{story_id}"
         else
           msg.send 'Story not found.'
