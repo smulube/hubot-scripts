@@ -27,7 +27,7 @@ module.exports = (robot) ->
           object = JSON.parse(body)
           msg.send object.definition
           msg.send "https://#{domain}.agileista.com/user_stories/#{story_id}"
+          if object.story_points
+            msg.send "#{object.story_points} story points"
         else
           msg.send 'Story not found.'
-
-          #msg.send "#{msg.random questions}: #{domain}/user_stories/#{story_id}"
